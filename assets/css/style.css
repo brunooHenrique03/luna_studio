@@ -514,7 +514,7 @@ footer{
 		height: calc(100% - 80px);
 		left: 100%;
 		top: 80px;
-		background-color: rgba(0,0,0,0.1);
+		background-color: var(--branco);
 		transition: all ease 0.2s;
 	}
 
