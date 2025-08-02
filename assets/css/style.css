@@ -315,6 +315,7 @@ h2{
 	text-align: center;
 	border-radius: var(--radius);	
 	flex: 1;
+	transition: var(--transition);
 }
 
 .feedback-container img{
@@ -363,6 +364,39 @@ h2{
 .feedbacks-arrow-right:hover{
 	border-color: var(--cinza) var(--cinza) transparent transparent;
 }
+
+.image-before,
+.image-after{
+	position: relative;
+}
+
+.image-before::before,
+.image-after::after{
+	text-transform: uppercase;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 6px 12px;
+	border-radius: 15px;
+	font-size: 0.8em;
+	letter-spacing: 2px;
+	min-width: 80px;
+	text-align: center;
+}
+
+.image-before::before{
+	content: 'Antes';
+	background-color: var(--purple);
+	color: var(--background);
+}
+
+.image-after::after{
+	content: 'Depois';
+	background-color: var(--background);
+	color: var(--purple);
+}
+
+
 
 section.contact{
 	padding-bottom: 0;
